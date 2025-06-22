@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0;url=" /> <!-- Yedek olarak bırak -->
+  <title>Yönlendiriliyor...</title>
+  <script>
+    // Yönlendirme yapılacak linklerin listesi
+    const links = [
+      "https://www.trendyol.com/shimano/shimano-fren-vites-kolu-p-94029791?boutiqueId=61&merchantId=551455&storefrontId=1&countryCode=TR&language=tr&gads=true",
+      "https://www.hepsiburada.com/decathlon-btwin-100-20-24-bisiklet-ayagi-p-HBCV00004A649I?magaza=DECATHLON",
+      "https://www.trendyol.com/knt/24-jant-bisiklet-dis-ve-ic-lastik-seti-p-5773056",
+    ];
+
+    // Sayfa yüklendiğinde çalışacak yönlendirme
+    window.onload = function() {
+      // Rastgele bir index seç
+      const randomIndex = Math.floor(Math.random() * links.length);
+      const selectedUrl = links[randomIndex];
+
+      // Yönlendirme yap
+      window.location.href = selectedUrl;
+    };
+  </script>
+</head>
+<body>
+  <p>Yönlendiriliyorsunuz...</p>
+</body>
+</html>
